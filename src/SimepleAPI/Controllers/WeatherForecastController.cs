@@ -24,7 +24,7 @@ namespace SimepleAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
          {
-             return "Theo";
+             return "Theo Power";
          }
 
         [HttpGet]
