@@ -28,10 +28,10 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: 'dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
   inputs:
-    command: 'publish'
+    command: publish
     publishWebProjects: false
     projects: 'src/SimepleAPI/SimepleAPI.csproj'
-    arguments: --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
 
 - task: PublishBuildArtifacts@1
