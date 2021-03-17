@@ -17,10 +17,10 @@ steps:
   inputs:
     command: test
     projects: '**/*Tests*/*csproj' 
-    arguments: '--configuartion $(buildConfiguartion)'   
+    arguments: '--configuration $(buildConfiguration)'   
 
-- script: dotnet build --configuartion$(buildConfiguartion)
-  displayName: 'dotnet build $(buildConfiguation)'
+- script: dotnet build --configuration$(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
 
 
 
