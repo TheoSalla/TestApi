@@ -17,7 +17,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: test
-    projects: '**/*test/*.csproj'
+    projects: 'SimpleAPISln\test\SimpleAPI.Test\SimpleAPI.Test.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
 
@@ -27,6 +27,6 @@ steps:
 
 
 
-
+SimpleAPISln\test\SimpleAPI.Test\SimpleAPI.Test.csproj
 
 
